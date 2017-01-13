@@ -16,7 +16,7 @@ use ide run `blade.sample.Application` main method.
 git clone https://github.com/blade-samples/sample.git
 cd sample
 mvn clean package assembly:single
-java -jar target/dist/sample/sample-0.0.1.jar
+java -jar target/dist/sample/sample-0.0.2.jar
 ```
 
 You can Open the browser to access:

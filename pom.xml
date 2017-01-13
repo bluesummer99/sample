@@ -1,23 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<parent>
-		<groupId>com.bladejava</groupId>
-		<artifactId>blade-starter</artifactId>
-		<version>0.0.1</version>
-	</parent>
-
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bladejava</groupId>
 	<artifactId>sample</artifactId>
 	<packaging>jar</packaging>
 	<name>sample Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	<version>0.0.1</version>
-
+	<version>0.0.2</version>
 
 	<properties>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -25,14 +19,17 @@
 		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-core</artifactId>
+			<version>1.7.0-alpha</version>
 		</dependency>
 		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-template-velocity</artifactId>
+			<version>0.0.5</version>
 		</dependency>
 		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-embed-jetty</artifactId>
+			<version>0.0.7</version>
 		</dependency>
 
 	</dependencies>
@@ -49,8 +46,8 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
@@ -80,7 +77,7 @@
 						</manifest>
 						<manifestEntries>
                             <!-- 在Class-Path下添加配置文件的路径 -->
-                            <Class-Path>conf/</Class-Path>
+                            <Class-Path>config/</Class-Path>
                         </manifestEntries>
 					</archive>
 				</configuration>

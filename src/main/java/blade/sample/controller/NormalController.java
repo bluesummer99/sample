@@ -45,9 +45,8 @@ public class NormalController {
 		FileItem[] fileItems = request.files();
 		if(null != fileItems && fileItems.length > 0){
 			FileItem fileItem = fileItems[0];
-			System.out.println(fileItem.getFileName());
-			System.out.println(fileItem.getName());
-			System.out.println(fileItem.getFile());
+			System.out.println(fileItem.fileName());
+			System.out.println(fileItem.file());
 		}
 		
 	}

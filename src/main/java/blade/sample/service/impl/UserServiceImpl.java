@@ -1,10 +1,9 @@
 package blade.sample.service.impl;
 
-import com.blade.ioc.annotation.Component;
-
 import blade.sample.service.UserService;
+import com.blade.ioc.annotation.Service;
 
-@Component
+@Service
 public class UserServiceImpl implements UserService {
 
 	@Override
