@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 	<name>sample Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -15,21 +15,34 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>oss-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-core</artifactId>
-			<version>1.7.0-alpha</version>
+			<version>1.7.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-template-velocity</artifactId>
-			<version>0.0.5</version>
+			<version>0.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-embed-jetty</artifactId>
-			<version>0.0.7</version>
+			<version>0.0.9</version>
 		</dependency>
 
 	</dependencies>
