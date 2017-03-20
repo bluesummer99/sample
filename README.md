@@ -5,7 +5,7 @@ A blade framework sample project.
 # Run With IDE
 
 ```sh
-git clone https://github.com/blade-samples/sample.git
+git clone https://github.com/bladejava/sample.git
 ```
 
 use ide run `blade.sample.Application` main method.
@@ -13,7 +13,7 @@ use ide run `blade.sample.Application` main method.
 # Run With Jar File
 
 ```sh
-git clone https://github.com/blade-samples/sample.git
+git clone https://github.com/bladejava/sample.git
 cd sample
 mvn clean package assembly:single -Pprod -Dmaven.test.skip=true
 java -jar target/dist/sample/sample-0.0.4.jar
